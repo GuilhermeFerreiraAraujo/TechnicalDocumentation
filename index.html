@@ -21,16 +21,16 @@
             </header>
 
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#flex_container">Flex Container</a></li>
-                <li><a href="#flex_direction">Flex Direction</a></li>
-                <li><a href="#flex_pack">Flex Pack</a></li>
-                <li><a href="#flex_wrap">Flex Wrap</a></li>
-                <li><a href="#flex_flow">Flex Flow</a></li>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#flex_container">Flex Container</a></li>
+                <li><a class="nav-link" href="#flex_direction">Flex Direction</a></li>
+                <li><a class="nav-link" href="#flex_pack">Flex Pack</a></li>
+                <li><a class="nav-link" href="#flex_wrap">Flex Wrap</a></li>
+                <li><a class="nav-link" href="#flex_flow">Flex Flow</a></li>
             </ul>
         </nav>
 
-        <div id="main-doc" class="right-column">
+        <main id="main-doc" class="right-column">
 
             <section id="introduction" class="main-section">
                 <header>
@@ -92,11 +92,13 @@
                         container to flexbox you need to set the display property to <b>flexbox</b>.
                     </p>
 
-                    <p class="code">
+                    <code>
+                        <p class="code">
                         .flexcontainer {<br>
                         <span class="tab">display: flexbox;</span><br>
                         }
-                    </p>
+                        </p>
+                    </code>
                 </div>
 
             </section>
@@ -114,11 +116,13 @@
                         If the flexbox layout is row, the layout axis is horizontal.
                     </p>
 
-                    <p class="code">
-                        .flexdirection {<br>
-                        <span class="tab">flex-direction: row;</span><br>
-                        }
-                    </p>
+                    <code>
+                        <p class="code">
+                            .flexdirection {<br>
+                            <span class="tab">flex-direction: row;</span><br>
+                            }
+                        </p>
+                    </code>
 
                     <p>The next values are available for the flex direction property:</p>
                     <table>
@@ -154,7 +158,7 @@
                 </div>
             </section>
 
-            <section id="flex_pack" class="main-class">
+            <section id="flex_pack" class="main-section">
                 <header>
                     <hgroup>
                         <h1>Flex pack</h1>
@@ -167,11 +171,13 @@
                         Flex-pack as it is in flex-direction, provides direction to flex items.
                     </p>
 
-                    <p class="code">
-                        .flexcontainer {<br>
-                        <span class="tab">flex-pack: end;</span><br>
-                        }
-                    </p>
+                    <code>
+                        <p class="code">
+                            .flexcontainer {<br>
+                            <span class="tab">flex-pack: end;</span><br>
+                            }
+                        </p>
+                    </code>
 
                     <p>The follow values are available for the flex pack</p>
 
@@ -222,11 +228,13 @@
                         We can specify if the flexbox should wrap or not wrap.
                     </p>
 
-                    <p class="code">
-                        .flexcontainer {<br>
-                        <span class="tab">flex-wrap: end;</span><br>
-                        }
-                    </p>
+                    <code>
+                        <p class="code">
+                            .flexcontainer {<br>
+                            <span class="tab">flex-wrap: end;</span><br>
+                            }
+                        </p>
+                    </code>
 
                     <p>We can use one of the follow options with flex-wrap property:</p>
 
@@ -270,15 +278,17 @@
                         wrap. It is basically a shorthand for flex-direction and flex wrap.
                     </p>
 
-                    <p class="code">
-                        .flexcontainer {<br>
-                        <span class="tab">flex-flow: row wrap;</span><br>
-                        }
-                    </p>
+                    <code>
+                        <p class="code">
+                            .flexcontainer {<br>
+                            <span class="tab">flex-flow: row wrap;</span><br>
+                            }
+                        </p>
+                    </code>
                 </div>
             </section>
 
-        </div>
+        </main>
     </div>
 
 
