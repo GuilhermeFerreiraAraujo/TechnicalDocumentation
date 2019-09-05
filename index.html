@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Guilherme Ferreira de Araujo">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+        <nav id="navbar" >
+            <header>
+                <hgroup>
+                    <h1>Flexbox</h1>
+                </hgroup>
+            </header>
+
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#flexcontainer">Flex Container</a></li>
+                <li><a href="#flexdirection">Flex Direction</a></li>
+                <li><a href="#flexpack">Flex Pack</a></li>
+                <li><a href="#flexwrap">Flex Wrap</a></li>
+                <li><a href="#flexflow">Flex Flow</a></li>
+            </ul>
+        </nav>
+
+
+        <div id="main-doc" class="right-column">
+
+            <a href="#flexflow">Flex Flow</a>
+            <section id="#introduction" class="main-section">
+                <header>
+                    <hgroup>
+                        <h1>Introduction</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+                    <p>
+                        The flexbox is a CSS3 construct that provides a way to lay out elements that flow. Flow means
+                        that the elements will flow from either left to right, also known as horizontal,
+                        or up and down, also known as vertical.
+                    </p>
+
+                    <p>
+                        Flexbox layout was officially called CSS Flexble Box Layout Module that was made to improve
+                        the items align, directionos and order in the container even when they
+                        are with dynamic or even unknown size.
+                    </p>
+
+                    <p>
+                        The prime characteristic of the flex container is the ability to modify the width or height of
+                        its children to fill the available space in the best possible way on different
+                        screen sizes.
+                    </p>
+
+                    <p>
+                        Flexbox layout algorithm is direction based unlike the block or inline layout
+                        which are
+                        vertically and horizontally based. This flexbox layout should be used
+                        for small application components.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="#flexcontainer" class="main-section">
+                <header>
+                    <hgroup>
+                        <h1>Flex Container</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+                    <p>
+                        In order to work with flexbox, you need to first create a flexbox container and to set this
+                        container to flexbox you need to set the display property to <b>flexbox</b>.
+                    </p>
+
+                    <p class="code">
+                        .flexcontainer {<br>
+                        <span class="tab">display: flexbox;</span><br>
+                        }
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="#flexdirection" class="main-section">
+                <header>
+                    <hgroup>
+                        <h1>Flex direction</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+                    <p>The flexbox is oriented based on the flex direction. The flex direction is based on the layout
+                        axis. If the layout of the flexbox is column, the layout axis is vertical.
+                        If the flexbox layout is row, the layout axis is horizontal.
+                    </p>
+
+                    <p class="code">
+                        .flexdirection {<br>
+                        <span class="tab">flex-direction: row;</span><br>
+                        }
+                    </p>
+
+                    <p>The next values are available for the flex direction property:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Property</td>
+                                <td>Description</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>column</td>
+                                <td>Flows the child elements of the flexbox across the vertical axis top to
+                                    bottom.</td>
+                            </tr>
+                            <tr>
+                                <td>row</td>
+                                <td>Flws the child element of the flexbox along the horizontal axis left to
+                                    right.</td>
+                            </tr>
+                            <tr>
+                                <td>column-reverse</td>
+                                <td>Renders the child elements along the vertical axis from the reverse end
+                                    bottom to top.</td>
+                            </tr>
+                            <tr>
+                                <td>row-reverse</td>
+                                <td>Renders the child elements along the horizontal axis from the reverse end
+                                    right to left.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="#flexpack" class="main-class">
+                <header>
+                    <hgroup>
+                        <h1>Flex pack</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+
+                    <p>
+                        Flex-pack as it is in flex-direction, provides direction to flex items.
+                    </p>
+
+                    <p class="code">
+                        .flexcontainer {<br>
+                        <span class="tab">flex-pack: end;</span><br>
+                        }
+                    </p>
+
+                    <p>The follow values are available for the flex pack</p>
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>End</td>
+                                <td>Renders the child elements from the end in relation to the layout axis set
+                                    direction</td>
+                            </tr>
+                            <tr>
+                                <td>Start</td>
+                                <td>Renders the child elements from the start in relation to the layout axis set
+                                    direction</td>
+                            </tr>
+                            <tr>
+                                <td>center</td>
+                                <td>renders the child elements centered on the layout axis</td>
+                            </tr>
+                            <tr>
+                                <td>distribute</td>
+                                <td>Evenly spaces the child elements along the layout axis.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </section>
+
+            <section id="#flexwrap" class="main-section">
+                <header>
+                    <hgroup>
+                        <h1>Flex Wrap</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+                    <p>Flex-wrap provides the ability to specify what the browser should do in the event that the
+                        content within the flexbox exceeds the available space of the flexbox itself.
+                        We can specify if the flexbox should wrap or not wrap.
+                    </p>
+
+                    <p class="code">
+                        .flexcontainer {<br>
+                        <span class="tab">flex-wrap: end;</span><br>
+                        }
+                    </p>
+
+                    <p>We can use one of the follow options with flex-wrap property:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>nowrap</td>
+                                <td>This property means that the browser should not wrap the content, meaning that it
+                                    will overflow the content of the page in case there is no space to continue.</td>
+                            </tr>
+                            <tr>
+                                <td>wrap</td>
+                                <td>Specifies that the content should wrap in case of no space available to continue.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>wrap-reverse</td>
+                                <td>The same as wrap but cross-start and cross-end are permuted.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+
+            <section id="#flexflow" class="main-section">
+                <header>
+                    <hgroup>
+                        <h1>Flex Flow</h1>
+                    </hgroup>
+                </header>
+
+                <div class="content">
+                    <p>The flex-flow property supports specifying the wrap style as the second parameter: flex-flow: row
+                        wrap. It is basically a shorthand for flex-direction and flex wrap.
+                    </p>
+
+                    <p class="code">
+                        .flexcontainer {<br>
+                        <span class="tab">flex-flow: row wrap;</span><br>
+                        }
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+</body>
+
+</html>
